@@ -13,7 +13,7 @@ function App() {
   const [weight, setWeight] = useState('');
   const [pokeData, setPokeData] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [url, setUrl] = useState('https://pokeapi.co/api/v2/pokemon?limit=28&offset=0');
+  const [url, setUrl] = useState('https://pokeapi.co/api/v2/pokemon?limit=150&offset=0');
   const [bannedAttributes, setBannedAttributes] = useState([]);
 
   const handleBanAbilityClick = () => {
@@ -95,7 +95,7 @@ function App() {
         <div className="current-image-container">
               {currentImage ? (
                 <div>
-                  <img src={currentImage} alt={name} width='250px' height='250px' />
+                  <img src={currentImage} alt={name} width='200px' height='200px' />
                 <p>{name}</p>
                 </div>
               ) : (
